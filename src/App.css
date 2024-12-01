@@ -1,0 +1,14 @@
+.heatmap-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.heatmap-title {
+  text-align: center; 
+  font-size: 2rem; 
+  margin-bottom: 20px; 
+  font-weight: bold; 
+} 

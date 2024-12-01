@@ -1,0 +1,102 @@
+.heatmap {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 30px; 
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .month {
+    width: 160px; 
+    margin: 0; 
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 5px;
+  }
+  
+  .day {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: transparent; 
+  }
+  
+  .color-empty {
+    background-color: #c6c6c6; 
+  }
+  
+  .color-scale-1 {
+    background-color: #a5d8a5; 
+  }
+  
+  .color-scale-2 {
+    background-color: #569d56; 
+  }
+  
+  .color-scale-3 {
+    background-color: #256b25; 
+  }
+  
+  .color-scale-4 {
+    background-color: #185218; 
+  }
+  
+  .color-scale-5 {
+    background-color: #1a371a; 
+  }
+  
+  .tooltip {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1000;
+    white-space: nowrap;
+  }
+
+
+    @media (max-width: 480px) {
+        .heatmap {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+        padding: 10px;
+        }
+    
+        .month {
+        width: 100%;
+        padding: 5px;
+        }
+    
+        .grid {
+        grid-template-columns: repeat(7, 1fr); 
+        gap: 3px;
+        }
+    
+        .day {
+        width: 18px;
+        height: 18px;
+        }
+    
+        .tooltip {
+        max-width: 250px; 
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
